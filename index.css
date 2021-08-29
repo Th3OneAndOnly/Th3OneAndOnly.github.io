@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400");
+
+*,
+* > * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0b7010;
+  font-family: Roboto, sans-serif;
+}
+
+.desc {
+  padding: 1rem 10rem;
+  line-height: 1.5rem;
+}
+
+.links {
+  background-color: #0d4900;
+  color: white;
+  padding: 2rem 5rem;
+}
+
+.links a {
+  color: #268b4f;
+  text-decoration: none;
+}
+
+.links a:hover {
+  font-weight: bold;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hcenter {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  background-color: black;
+  border: 0.5px solid black;
+}
+
+.underline {
+  border-bottom: 2px solid #0d4900;
+  margin: 0 25%;
+}
+
+.large {
+  font-size: 1.35rem;
+  font-weight: 0.25rem;
+  letter-spacing: 0.25rem;
+  position: relative;
+  top: 2px;
+}
+
+.repos {
+  list-style-type: none;
+  font-size: 1rem;
+  padding: 10px;
+}
+
+.repos > li:nth-child(odd) {
+  text-align: left;
+}
+
+.repos > li:nth-child(even) {
+  text-align: right;
+  border-bottom: 1px solid #0d4900;
+  margin-bottom: 2px;
+}
+
+.repos a {
+  text-decoration: none;
+  color: black;
+}
+
+.down-arrow {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-top: 10px solid #0d4900;
+
+  position: absolute;
+
+  animation: 0.5s infinite alternate ease bob;
+}
+
+@keyframes bob {
+  from {
+    bottom: 5vh;
+  }
+
+  to {
+    bottom: 8vh;
+  }
+}
+
+.name {
+  font-size: 8vw;
+  height: 100vh;
+  font-weight: bold;
+  font-family: "Lato", sans-serif;
+  color: #ffffee;
+}
+
+#cube {
+  width: 85vmin;
+  height: 85vmin;
+  position: absolute;
+  left: vw;
+  z-index: -1;
+}
+
+.question .why {
+  display: block;
+  float: left;
+  font-size: 0.85rem;
+  margin-right: 1rem;
+}
+
+.question .answer {
+  display: none;
+}
+
+.question .why:hover ~ .answer {
+  display: block;
+  display: absolute;
+  float: left;
+  width: 20vw;
+  min-height: 5vh;
+}
